@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Interactions } from 'aws-amplify';
+import { Storage, Interactions } from 'aws-amplify';
 
 function VoiceInput({ onTranscript }) {
   const [isListening, setIsListening] = useState(false);

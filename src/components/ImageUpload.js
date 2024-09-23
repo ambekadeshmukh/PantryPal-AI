@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Storage } from 'aws-amplify';
+import { Storage, Interactions } from 'aws-amplify';
 
 function ImageUpload({ onUpload }) {
   const [isUploading, setIsUploading] = useState(false);

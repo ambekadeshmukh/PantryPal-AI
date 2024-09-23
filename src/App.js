@@ -7,7 +7,7 @@ import RecipeDisplay from './components/RecipeDisplay';
 import VoiceInput from './components/VoiceInput';
 import ImageUpload from './components/ImageUpload';
 import axios from 'axios';
-
+import { Storage, Interactions } from 'aws-amplify/storage';
 
 Amplify.configure({
   // Add your Amplify configuration here
