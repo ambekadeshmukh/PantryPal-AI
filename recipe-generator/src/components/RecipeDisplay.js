@@ -1,4 +1,5 @@
 import React from 'react';
+import TutorialPlayer from './TutorialPlayer';
 
 function RecipeDisplay({ recipe }) {
   return (
@@ -16,9 +17,18 @@ function RecipeDisplay({ recipe }) {
           <li key={index}>{step}</li>
         ))}
       </ol>
-      <p>Sustainability Score: {recipe.sustainabilityScore}/10</p>
+      <h3>Sustainability Score: {recipe.sustainabilityScore}/10</h3>
+      <p>
+        {recipe.sustainabilityScore > 7
+          ? "Great choice! This recipe has a low environmental impact."
+          : recipe.sustainabilityScore > 4
+          ? "This recipe has a moderate environmental impact."
+          : "Consider trying a more sustainable recipe to reduce environmental impact."}
+      </p>
+      {recipe.tutorialStreamUrl && (
+        <TutorialPlayer streamUrl={recipe.tutorialStreamUrl} />
+      )}
     </div>
   );
 }
-
 export default RecipeDisplay;

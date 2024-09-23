@@ -13,7 +13,7 @@ Amplify.configure({
   // Add your Amplify configuration here
 });
 
-function App() {
+function App({ user, signOut }) {
   const [recipe, setRecipe] = useState(null);
 
   const handleRecipeGeneration = async (ingredients, dietaryRestrictions) => {
@@ -32,6 +32,7 @@ function App() {
   return (
     <div className="App">
       <h1>AI-Powered Recipe Generator</h1>
+      <p>Welcome, {user.username}! <button onClick={signOut}>Sign out</button></p>
       <VoiceInput onTranscript={(transcript) => console.log(transcript)} />
       <ImageUpload onUpload={(ingredients) => console.log(ingredients)} />
       <RecipeForm onSubmit={handleRecipeGeneration} />
