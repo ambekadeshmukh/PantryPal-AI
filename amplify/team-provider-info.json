@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-pantrypalai-dev-b944d-authRole",
+      "UnauthRoleArn": "arn:aws:iam::058264554045:role/amplify-pantrypalai-dev-b944d-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::058264554045:role/amplify-pantrypalai-dev-b944d-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-pantrypalai-dev-b944d-deployment",
+      "UnauthRoleName": "amplify-pantrypalai-dev-b944d-unauthRole",
+      "StackName": "amplify-pantrypalai-dev-b944d",
+      "StackId": "arn:aws:cloudformation:us-east-1:058264554045:stack/amplify-pantrypalai-dev-b944d/e28b3650-7955-11ef-97b4-0affe63809b1",
+      "AmplifyAppId": "d187diajdd56lm"
+    }
+  }
+}
