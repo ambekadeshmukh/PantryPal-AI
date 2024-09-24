@@ -1,70 +1,92 @@
-# Getting Started with Create React App
+# PantryPal: AI-Powered Sustainable Recipe Generator with Video Tutorials
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents
+- [Introduction](#introduction)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Architecture](#architecture)
+- [Setup and Installation](#setup-and-installation)
+- [Usage](#usage)
+- [API Documentation](#api-documentation)
+- [Future Enhancements](#future-enhancements)
+- [License](#license)
 
-## Available Scripts
+## Introduction
 
-In the project directory, you can run:
+PantryPal is an innovative, AI-powered recipe generator that leverages cutting-edge technologies to create unique, sustainable, and personalized recipes based on the ingredients you already have. By combining natural language processing, image recognition, and personalization algorithms, PantryPal aims to revolutionize home cooking, reduce food waste, and promote sustainable eating habits.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- AI-powered recipe generation using Claude 3 Sonnet model
+- Image recognition for ingredient identification
+- Voice input for hands-free interaction
+- Personalized recipe recommendations
+- Sustainability scoring for environmentally conscious cooking
+- Automated generation of simple animated cooking tutorials
+- User authentication and profile management
+- Responsive web design for desktop and mobile use
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
 
-### `npm test`
+- Frontend: React, AWS Amplify
+- Backend: AWS Lambda, Amazon API Gateway
+- AI/ML: Amazon Bedrock (Claude 3 Sonnet), Amazon Rekognition, Amazon Lex, Amazon Personalize
+- Database: Amazon DynamoDB
+- Authentication: Amazon Cognito
+- Storage: Amazon S3
+- Video Streaming: Amazon Kinesis Video Streams
+- Text-to-Speech: Amazon Polly
+- Monitoring: Amazon CloudWatch
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Architecture
 
-### `npm run build`
+![mermaid-diagram-2024-09-23-223621](https://github.com/user-attachments/assets/968ae7e1-cc4a-454e-b0be-41183a5b622d)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Setup and Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository:
+   ```
+   git clone https://github.com/ambekadeshmukh/pantrypal.git
+   cd pantrypal
+   ```
 
-### `npm run eject`
+2. Install dependencies:
+   ```
+   npm install
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Configure AWS services:
+   - Set up an AWS account and configure the CLI
+   - Create necessary resources (S3 bucket, Lambda functions, API Gateway, etc.)
+   - Update the `src/aws-exports.js` file with your AWS configuration
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. Start the development server:
+   ```
+   npm start
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Usage
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Sign up or log in to your PantryPal account
+2. Input available ingredients through text, voice, or image upload
+3. Specify any dietary restrictions or preferences
+4. Click "Generate Recipe" to receive a personalized, sustainable recipe
+5. View the recipe details, including ingredients, instructions, sustainability score, and video tutorial
 
-## Learn More
+## API Documentation
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Future Enhancements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Integration with smart kitchen devices
+- Meal planning and grocery list generation
+- Nutritional information and calorie tracking
+- Community features for sharing and rating recipes
+- Advanced video tutorials with step-by-step animations
+- Augmented reality cooking assistant
 
-### Analyzing the Bundle Size
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
