@@ -1,4 +1,4 @@
-# PantryPal: AI-Powered Sustainable Recipe Generator with Video Tutorials
+# PantryPal: AI-Powered Recipe Generator
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -34,13 +34,10 @@ PantryPal is an innovative, AI-powered recipe generator that leverages cutting-e
 - Database: Amazon DynamoDB
 - Authentication: Amazon Cognito
 - Storage: Amazon S3
-- Video Streaming: Amazon Kinesis Video Streams
 - Text-to-Speech: Amazon Polly
 - Monitoring: Amazon CloudWatch
 
 ## Architecture
-
-![mermaid-diagram-2024-09-23-223621](https://github.com/user-attachments/assets/968ae7e1-cc4a-454e-b0be-41183a5b622d)
 
 
 ## Setup and Installation
@@ -72,7 +69,7 @@ PantryPal is an innovative, AI-powered recipe generator that leverages cutting-e
 2. Input available ingredients through text, voice, or image upload
 3. Specify any dietary restrictions or preferences
 4. Click "Generate Recipe" to receive a personalized, sustainable recipe
-5. View the recipe details, including ingredients, instructions, sustainability score, and video tutorial
+5. View the recipe details, including ingredients, instructions, and sustainability score.
 
 ## API Documentation
 
